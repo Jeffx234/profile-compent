@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+html {
+  --preto: #0c0b0b;
+  --cinza: #0f0e0e;
+  --branco: #b7b7b7;
+  --verde: #046313;
+  --azul: #044a7d;
+  --amarelo: #725200;
+
+  background-color: black;
+}
+
+.box-model {
+  margin: auto;
+  width: 70vw;
+  margin-top: 6rem;
+  height: 100px;
+}
+
+.container {
+  background: var(--cinza);
+  height: 450px;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.box {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  margin: 0.5rem;
+  padding: 3rem;
+  background: red;
+  border-radius: 1rem;
+  color: white;
+}
+
+.orange {
+  background: var(--amarelo);
+}
+
+.green {
+  background: var(--verde);
+}
+
+.blue {
+  background: var(--azul);
+}
+
+.perfil {
+  margin: auto;
+  text-align: center;
+}
+
+.perfil .name {
+  color: var(--branco);
+}
+
+.perfil .name h2 {
+  margin-bottom: 0.2rem;
+}
+
+.perfil a {
+  background: #1d1b1bfa;
+  padding: 0.6rem;
+  margin: 2rem 0 2rem 0;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.perfil a:hover {
+  opacity: 0.5;
+}
+
+.fa-edit {
+  font-size: 1.2rem;
+}
+
+.perfil p {
+  margin-bottom: 1rem;
+}
+
+.foto {
+  background: rgb(161, 151, 151);
+  border-radius: 50%;
+  margin: auto;
+}
+
+.perfil img {
+  border-radius: 50%;
+}
+
+.ter {
+  font-size: 2rem;
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 940px) {
+  .box-model {
+    width: 100%;
+  }
+  .container {
+    margin-top: 3rem;
+    height: auto;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 950px) {
+  .container {
+    margin: auto;
+  }
+
+  .perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    text-align: start;
+  }
+
+  .perfil .name {
+    display: flex;
+
+    align-items: center;
+    padding-left: 1rem;
+  }
+
+  .perfil .name .name1 {
+    margin-left: 1rem;
+    color: var(--branco);
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
